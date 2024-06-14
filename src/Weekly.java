@@ -8,13 +8,13 @@ public class Weekly extends Todo{
     }
 
     @Override
-    public String toString() {
-        return super.toString() + " (weekly)";
+    public String getTitle() {
+        return title;
     }
 
     @Override
-    public String getTitle() {
-        return title;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getInfo(){
@@ -22,8 +22,8 @@ public class Weekly extends Todo{
     }
 
     @Override
-    public void setTitle(String title) {
-        this.title = title;
+    public String toString() {
+        return super.toString() + " (weekly)";
     }
 }
 

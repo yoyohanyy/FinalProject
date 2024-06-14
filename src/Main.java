@@ -7,8 +7,9 @@ import java.io.*;
 
 public class Main {
     private ArrayList<TodoList> lists;
-    Scanner scanner = new Scanner(System.in);
     private static final String FILE_NAME = "todoList.txt";
+    Scanner scanner = new Scanner(System.in);
+    String initializeDate = "";
     public static void main(String[] args) {
         Main a = new Main();
         long currentWeek = a.initializeLists();
@@ -28,7 +29,7 @@ public class Main {
                 // Read the current week
                 String line = reader.readLine();
                 if (line != null) {
-                    long currentWeek = Long.parseLong(line);
+                    long currentWeek = initialize(line);
 
                     // Read the todo list items
                     while ((line = reader.readLine()) != null) {
@@ -114,10 +115,23 @@ public class Main {
 
     long initialize(){
         System.out.print("Enter the date of the first day of the semester in yyyymmdd format: ");
-        String input = scanner.nextLine();
+        initializeDate = scanner.nextLine();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
-        LocalDate startDate = LocalDate.parse(input, formatter);
+        LocalDate startDate = LocalDate.parse(initializeDate, formatter);
+
+        LocalDate today = LocalDate.now();
+
+        long weeksBetween = ChronoUnit.WEEKS.between(startDate, today);
+
+        long currentWeek = weeksBetween + 1;
+
+        return currentWeek;
+    }
+
+    long initialize(String date){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+        LocalDate startDate = LocalDate.parse(date, formatter);
 
         LocalDate today = LocalDate.now();
 
@@ -152,7 +166,7 @@ public class Main {
                     editList(parts);
                     break;
                 case "search":
-                    searchList(parts);
+                    searchList();
                     break;
                 case "save":
                     saveList(currentWeek);
@@ -260,7 +274,7 @@ public class Main {
         a.updateItem();
     }
 
-    public void searchList(String[] parts){
+    public void searchList(){
         TodoList a = lists.get(0);
         a.searchList();
     }
@@ -268,7 +282,7 @@ public class Main {
     public void saveList(long currentWeek) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(FILE_NAME))) {
             // Save the current week
-            writer.println(currentWeek);
+            writer.println(initializeDate);
 
             // Save the todo list items
             for (TodoList list : lists) {

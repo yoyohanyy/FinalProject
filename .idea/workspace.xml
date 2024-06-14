@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f9fabc1-3d3d-4c1b-8d1d-ad2d88f60b51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Deadline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TodoList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Weekly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todoList.txt" afterDir="false" />
+    <list default="true" id="2f9fabc1-3d3d-4c1b-8d1d-ad2d88f60b51" name="Changes" comment="Java final projectt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Final report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Weekly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weekly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todoList.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +70,45 @@
       <workItem from="1718161821407" duration="1212000" />
       <workItem from="1718190742621" duration="7518000" />
       <workItem from="1718247323749" duration="1597000" />
-      <workItem from="1718330238231" duration="434000" />
+      <workItem from="1718330238231" duration="2317000" />
+      <workItem from="1718344994823" duration="3813000" />
     </task>
+    <task id="LOCAL-00001" summary="Java final project">
+      <option name="closed" value="true" />
+      <created>1718330702232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718330702232</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Java final projectt">
+      <option name="closed" value="true" />
+      <created>1718331019195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718331019195</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Java final project" />
+    <MESSAGE value="Java final projectt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java final projectt" />
   </component>
 </project>
